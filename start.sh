@@ -6,7 +6,7 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
 # Changer le thème de la console Windows (vous pouvez personnaliser les couleurs)
 Set-ItemProperty -Path HKCU:\Console -Name ColorTable00 0x000000
-Set-ItemProperty -Path HKCU:\Console -Name ColorTable07 0xFFFFFF
+Set-ItemProperty -Path HKCU:\Console -Name ColorTable07 0x00FF00
 Set-ItemProperty -Path HKCU:\Console -Name ColorTable08 0x000000
 Set-ItemProperty -Path HKCU:\Console -Name ColorTable09 0xFF0000
 Set-ItemProperty -Path HKCU:\Console -Name ColorTable10 0x00FF00
