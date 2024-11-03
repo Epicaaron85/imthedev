@@ -5,8 +5,20 @@ This code allows developers who create many virtual machines to automatically in
 
 # How to use
 
+# Method 1 :
 1. Open PowerShell
 2. Execute `iwr -Uri "https://raw.githubusercontent.com/Epicaaron85/imthedev/refs/heads/main/start.sh" -OutFile "$env:TEMP\start.sh"; & bash "$env:TEMP\start.sh"
+`
+
+# Method 2 :
+1. Open cmd
+2. Execute `powershell -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/Epicaaron85/imthedev/refs/heads/main/start.sh -OutFile start.sh; Start-Process -FilePath start.sh"
+`
+
+
+# Method 3 (Interface) :
+1. Open cmd
+2. Execute `mkdir "C:\IMTHEDEV" && curl -L -o "C:\IMTHEDEV\ImTheDev.exe" "https://raw.githubusercontent.com/Epicaaron85/imthedev/main/interface-version/ImTheDev.exe" && curl -L -o "C:\IMTHEDEV\ImTheDev.dll" "https://raw.githubusercontent.com/Epicaaron85/imthedev/main/interface-version/ImTheDev.dll" && start "" "C:\IMTHEDEV\ImTheDev.exe"
 `
 
 # Soon
